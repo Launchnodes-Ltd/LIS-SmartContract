@@ -1,0 +1,27 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "compile": "npx hardhat clean && npx hardhat compile",
+    "test": "npx hardhat test --v",
+    "deploy": "npx hardhat run --network holesky scripts/deploy.ts",
+    "createNgo": "npx hardhat run --network holesky scripts/createNgo.ts"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2",
+    "@openzeppelin/contracts-upgradeable": "^5.0.2",
+    "@primitivefi/hardhat-dodoc": "^0.2.3",
+    "solidity-docgen": "^0.6.0-beta.36"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.1",
+    "@openzeppelin/hardhat-upgrades": "^1.22.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.20.1",
+    "hardhat-tracer": "^2.8.0",
+    "prettier": "^2.8.3",
+    "prettier-plugin-solidity": "^1.1.1",
+    "typescript": "^5.4.2"
+  }
+}
